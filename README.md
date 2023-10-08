@@ -1,6 +1,8 @@
 # Kravas automašīnu aizpildīšana ar kastēm (bin packing). Mazais praktiskais darbs
 Edgars Laķis
 7.10.2023
+Saiti uz Git(hub) repozitoriju, kas satur programmas kodu:
+https://github.com/edgarslakis/bin-packing
 ## Uzdevuma formulējums 
 Dotas m automašīnas, katra ar kravas kastes izmēru w[i] x l[i]. Dotas n kastes ar izmēriem p[j] x g[j]. 
 Salikt visas kastes pēc iespējas mazāk automašīnās. Paliekam 2D - kastes nedrīkst likt vienu otrai virsū.
@@ -32,8 +34,8 @@ Beigās pasludinām jaunatrasto risnājumu par līdz šim labāko risinājumu, j
 Gājienā izvēlas nejaušu kastu pāri (kaimiņus) no visu mašīnu masīva. Kaimiņu pāri var veidot kastes gan no vienas mašīnas, gan no dažādām mašīnām. Izvēlēto kastu pāri samaina vietām. Tālāk rēķina (novērtē) šo jauno kravu sadalījumu pa mašīnām. Nākamais gājiens sākas ar samazinātu temperatūras (ar noteiktu 5% soli).
 Šāds gājiens tiek atkārtots L reizes (iterācijas).
 ## Testēšanas apraksts
-Testēt iespējams norādot automašīnu skaitu m un kravas kastes n.
-Sākotnēji testēju ar manuāli ievadītām kravas kastēm un mašīnām.
+Testēt iespējams norādot automašīnu skaitu m un kravas kastes n programmas koda main() funkcijā.
+Sākotnēji testēju ar manuāli ievadītu masīvu kravas kastēm un mašīnām.
 ### Izpildes laiks
 Optimizācijas algoritma izpilde prasa 3..5 milisekundes ar vienu iterāciju. Desmit iterācijām - 15..16 milisekundes.
 ### Risinājuma kvalitāte
