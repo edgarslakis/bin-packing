@@ -11,9 +11,7 @@ def first_fit_decreasing(items, bins):
 
     # Uzkonstruē TUKŠAS kravas mašīnas
     bin_count = len(bins)
-
-    # Risinājums apkopo visas mašīnas
-    bin_contents = [[] for _ in range(bin_count)]
+    bin_contents = [[(0, 0)] for _ in range(bin_count)]  # katrā mašīnā ieliek tukšu 0 x 0 kravu, citādi nestrādā "2. Atrast apkārtni"
 
     # First Fit Decreasing algoritms pēc kārtas ņem kastes, sākot ar lielāko
     for item in items:
@@ -45,21 +43,17 @@ def simulated_annealing(initial_solution, TEMPERATURE, T_STEP, bins):
 
     best_solution = current_solution
     best_cost = current_cost
-
+    running_cost = [] #masīvs, kurā novēros izmaksu optimizāciju ar katrā algoritma iterācijā
     for _ in range(L):
         T = TEMPERATURE
         while T > 0.1: #CIKLS (skatīt komentāru par T cikla beigās). Apstāšanās kritērijs - temperatūra sasniedz 0.1
             # 2. Atrast apkārtni - iegūst nejaušus kaimiņus. Tādā veidā izvēlas nākošā risinājuma kandidātu no apkārtnes nejauši mainot divas kastes vietām
             neighbor_solution = current_solution.copy()
-            try:
-                bin1 = random.randint(0, len(neighbor_solution) - 1)
-                bin2 = random.randint(0, len(neighbor_solution) - 1)
-                item1 = random.randint(0, len(neighbor_solution[bin1]) - 1)
-                item2 = random.randint(0, len(neighbor_solution[bin2]) - 1)
-            except ValueError:
-                #print("paņema tukšu kasti")
-                continue
-
+            bin1 = random.randint(0, len(neighbor_solution) - 1)
+            bin2 = random.randint(0, len(neighbor_solution) - 1)
+            item1 = random.randint(0, len(neighbor_solution[bin1]) - 1)
+            item2 = random.randint(0, len(neighbor_solution[bin2]) - 1)
+            
             # Samainam vietām divas kastes:
             neighbor_solution[bin1][item1], neighbor_solution[bin2][item2] = neighbor_solution[bin2][item2], neighbor_solution[bin1][item1]
             
@@ -76,11 +70,11 @@ def simulated_annealing(initial_solution, TEMPERATURE, T_STEP, bins):
             if current_cost < best_cost:
                 best_solution = current_solution
                 best_cost = current_cost # Piefiksējām jaunatrasta risinājuma izmaksas
-
+            running_cost.append(best_cost) # Uzlabotās izmaksas piefiksē, lai sekotu līdzi risinājuma kvalitātei.
             # 5. Izvēlas nākošo risinājumu, mainot TEMPERATŪRAS slieksni (lineāra mainīšana)
             T *= T_STEP
             # Turpina CIKLU līdz izpildās apstāšanās kritērijs - temperatūra samazinās no 1 līdz 0.1 ar soli T_STEP (0.05)
-    return best_solution
+    return best_solution, running_cost
 
 
 def print_bins(bin_contents):
@@ -97,7 +91,7 @@ if __name__ == "__main__":
     # items = [(7, 2), (1, 3), (4, 2), (2, 1), (2, 1), (1, 3), 
     #          (7, 3), (4, 1), (8, 2), (1, 3), (8, 2), (1, 3), (4, 2)]
     # bins = [(4, 5), (4, 5), (4, 5), (4, 5), (4, 5), (4, 5)]
-    random.seed(9001)
+
     items = []
     bins = []
     n = 12 # kravas kastu skaits
@@ -123,8 +117,9 @@ if __name__ == "__main__":
     print("Sākotnējais risinājums:", bin_contents)
         
     # Optimālā atrisinājuma instance
-    optimized_solution = simulated_annealing(bin_contents, TEMPERATURE, T_STEP, bins)
+    optimized_solution, running_cost = simulated_annealing(bin_contents, TEMPERATURE, T_STEP, bins)
     end = time.time()
     # Print the bins
     print_bins(optimized_solution)
+    print("Izmaksas katrā iterācijā:", running_cost)
     print(end-start)

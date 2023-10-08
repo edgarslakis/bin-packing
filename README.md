@@ -20,7 +20,7 @@ Domēns sastāv no:
 - Gājiena un apkārtnes funkcijas
 - Datu struktūrām, kas apraksta risinājumu:
   - kravas mašīnu masīvs (bins) ar atsevišķām mašīnām (bin) 
-  - kravas kastu masīvs (items) ar atsevišķām kastēm (item)
+  - kravas kastu masīvs (items) ar atsevišķām kastēm (item). No sākuma katrai mašīnai ieliek vienu nulles kravu.
   - mašīnu piepildījuma struktūra apkopota masīvā bin_contents
   - sakrautās kravas izmērs glabājas total_sizes
 Plānošanas mainīgo kopa šajā uzdevumā ir m kravas automašīnas un n kastes ar piekārtotu garumu un platumu. Galvenais ierobežojums meklēšanas telpā ir kravas mašīnas izmērs 2D, respektīvi, kravas mašīnā nevar ielikt vairāk kravu, kā to ļauj mašīnas izmērs 2D.
@@ -37,4 +37,4 @@ Sākotnēji testēju ar manuāli ievadītām kravas kastēm un mašīnām.
 ### Izpildes laiks
 Optimizācijas algoritma izpilde prasa 3..5 milisekundes ar vienu iterāciju. Desmit iterācijām - 15..16 milisekundes.
 ### Risinājuma kvalitāte
-Par optimumu varētu uzskatīt vienmērīg izkārtotu kravu pa iespējami maz mašīnām. Novēroju, ka minimālais mašīnu skaits tiek sasniegts jau ar First Fit Decreasing algoritmu. Simmulated Anealing uzlabo kravas izkārtojumu to vienmērīgojot.
+Risinājuma kvalitātei seko līdzi ar massīvu running_cost, kurā pievieno arvien labāka risinājuma izmaksas. Par optimumu varētu uzskatīt vienmērīg izkārtotu kravu pa iespējami maz mašīnām. Novēroju, ka lielākais progress tiek sasniegts jau ar First Fit Decreasing algoritmu. Simmulated Anealing uzlabo kravas izkārtojumu pa mašīnām un to vienmērīgojot.
