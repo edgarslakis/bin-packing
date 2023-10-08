@@ -37,8 +37,8 @@ Gājienā izvēlas nejaušu kastu pāri (kaimiņus) no visu mašīnu masīva. Ka
 Šāds gājiens tiek atkārtots L reizes (iterācijas).
 ## Testēšanas apraksts
 Testēt iespējams norādot automašīnu skaitu m un kravas kastes n programmas koda main() funkcijā.
-Sākotnēji testēju ar manuāli ievadītu masīvu kravas kastēm un mašīnām.
+Sākotnēji testēju ar manuāli ievadītu masīvu kravas kastēm un mašīnām. 
 ### Izpildes laiks
-Optimizācijas algoritma izpilde prasa 3..5 milisekundes ar vienu iterāciju. Desmit iterācijām - 15..16 milisekundes.
+Algoritma izpilde prasa 2..5 milisekundes ar vienu iterāciju. Desmit iterācijām - 15..16 milisekundes.
 ### Risinājuma kvalitāte
 Risinājuma kvalitātei seko līdzi ar massīvu running_cost, kurā pievieno arvien labāka risinājuma izmaksas. Par optimumu varētu uzskatīt vienmērīg izkārtotu kravu pa iespējami maz mašīnām. Novēroju, ka lielākais progress tiek sasniegts jau ar First Fit Decreasing algoritmu. Simmulated Anealing uzlabo kravas izkārtojumu pa mašīnām un to vienmērīgojot.
