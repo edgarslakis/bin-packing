@@ -1,7 +1,9 @@
 # Kravas automašīnu aizpildīšana ar kastēm (bin packing). Mazais praktiskais darbs
 Edgars Laķis
 7.10.2023
-Saiti uz Git(hub) repozitoriju, kas satur programmas kodu:
+
+Saite uz Git(hub) repozitoriju, kas satur programmas kodu:
+
 https://github.com/edgarslakis/bin-packing
 ## Uzdevuma formulējums 
 Dotas m automašīnas, katra ar kravas kastes izmēru w[i] x l[i]. Dotas n kastes ar izmēriem p[j] x g[j]. 
