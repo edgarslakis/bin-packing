@@ -1,0 +1,107 @@
+﻿Ensembl gene id,Gene name,UniProt accession,Annotated category
+ENSG00000003436,TFPI,P10646,Secreted to blood
+ENSG00000005844,ITGAL,P20701,Intracellular or membrane-bound
+ENSG00000008516,MMP25,Q9NPA2,Secreted to blood
+ENSG00000011422,PLAUR,Q03405,Intracellular or membrane-bound
+ENSG00000015413,DPEP1,P16444,Intracellular or membrane-bound
+ENSG00000026508,CD44,P16070,Secreted - unknown location
+ENSG00000037280,FLT4,P35916,Secreted to blood
+ENSG00000057593,F7,P08709,Secreted to blood
+ENSG00000066468,FGFR2,P21802,Secreted - unknown location
+ENSG00000067182,TNFRSF1A,P19438,Secreted to blood
+ENSG00000068078,FGFR3,P22607,Intracellular or membrane-bound
+ENSG00000073756,PTGS2,P35354,Intracellular or membrane-bound
+ENSG00000077238,IL4R,P24394,Secreted to blood
+ENSG00000080618,CPB2,Q96IY4,Secreted to blood
+ENSG00000087085,ACHE,P22303,Intracellular or membrane-bound
+ENSG00000087245,MMP2,P08253,Locally secreted to extracellular matrix
+ENSG00000088926,F11,P03951,Secreted to blood
+ENSG00000089597,GANAB,Q14697,Intracellular or membrane-bound
+ENSG00000091181,IL5RA,Q01344,Intracellular or membrane-bound
+ENSG00000095303,PTGS1,P23219,Intracellular or membrane-bound
+ENSG00000099937,SERPIND1,P05546,Secreted to blood
+ENSG00000099953,MMP11,P24347,Locally secreted to extracellular matrix
+ENSG00000100985,MMP9,P14780,Secreted to blood
+ENSG00000101981,F9,P00740,Secreted to blood
+ENSG00000102524,TNFSF13B,Q9Y275,Secreted to blood
+ENSG00000102755,FLT1,P17948,Secreted to blood
+ENSG00000103485,QPRT,Q15274,Intracellular or membrane-bound
+ENSG00000104368,PLAT,P00750,Secreted to blood
+ENSG00000105711,SCN1B,Q07699,Intracellular or membrane-bound
+ENSG00000105976,MET,P08581,Secreted to blood
+ENSG00000106128,GHRHR,Q02643,Intracellular or membrane-bound
+ENSG00000106366,SERPINE1,P05121,Secreted to blood
+ENSG00000106804,C5,P01031,Secreted to blood
+ENSG00000108691,CCL2,P13500,Secreted to blood
+ENSG00000108821,COL1A1,P02452,Locally secreted to extracellular matrix
+ENSG00000110799,VWF,P04275,Secreted to blood
+ENSG00000110944,IL23A,Q9NPF7,Secreted to blood
+ENSG00000111537,IFNG,P01579,Secreted to blood
+ENSG00000112115,IL17A,Q16552,Secreted to blood
+ENSG00000112715,VEGFA,P15692,Secreted to blood
+ENSG00000112964,GHR,P10912,Secreted to blood
+ENSG00000113302,IL12B,P29460,Secreted to blood
+ENSG00000113494,PRLR,P16471,Intracellular or membrane-bound
+ENSG00000113525,IL5,P05113,Secreted to blood
+ENSG00000113578,FGF1,P05230,Locally secreted
+ENSG00000114200,BCHE,P06276,Secreted to blood
+ENSG00000115232,ITGA4,P13612,Intracellular or membrane-bound
+ENSG00000115414,FN1,P02751,Secreted to blood
+ENSG00000115594,IL1R1,P14778,Secreted to blood
+ENSG00000115705,TPO,P07202,Intracellular or membrane-bound
+ENSG00000115718,PROC,P04070,Secreted to blood
+ENSG00000116678,LEPR,P48357,Secreted to blood
+ENSG00000117525,F3,P13726,Secreted to blood
+ENSG00000117601,SERPINC1,P01008,Secreted to blood
+ENSG00000118113,MMP8,P22894,Locally secreted to extracellular matrix
+ENSG00000119535,CSF3R,Q99062,Intracellular or membrane-bound
+ENSG00000119630,PGF,P49763,Secreted to blood
+ENSG00000119912,IDE,P14735,Intracellular or membrane-bound
+ENSG00000120088,CRHR1,P34998,Intracellular or membrane-bound
+ENSG00000120156,TEK,Q02763,Secreted to blood
+ENSG00000120659,TNFSF11,O14788,Secreted to blood
+ENSG00000121594,CD80,P33681,Intracellular or membrane-bound
+ENSG00000122194,PLG,P00747,Secreted to blood
+ENSG00000122861,PLAU,P00749,Secreted to blood
+ENSG00000123342,MMP19,Q99542,Locally secreted to extracellular matrix
+ENSG00000123454,DBH,P09172,Intracellular or membrane-bound
+ENSG00000124491,F13A1,P00488,Secreted to blood
+ENSG00000125538,IL1B,P01584,Secreted to blood
+ENSG00000125730,C3,P01024,Secreted to blood
+ENSG00000125966,MMP24,Q9Y5R2,Locally secreted to extracellular matrix
+ENSG00000126218,F10,P00742,Secreted to blood
+ENSG00000128052,KDR,P35968,Intracellular or membrane-bound
+ENSG00000128655,PDE11A,Q9HCR9,Intracellular or membrane-bound
+ENSG00000130035,GALNT8,"P17658,Q9NY28",Intracellular or membrane-bound
+ENSG00000130234,ACE2,Q9BYF1,Secreted to blood
+ENSG00000131187,F12,P00748,Secreted to blood
+ENSG00000131471,AOC3,Q16853,Secreted - unknown location
+ENSG00000134853,PDGFRA,P16234,Intracellular or membrane-bound
+ENSG00000135046,ANXA1,P04083,Secreted to blood
+ENSG00000136244,IL6,P05231,Secreted to blood
+ENSG00000136869,TLR4,O00206,Intracellular or membrane-bound
+ENSG00000137673,MMP7,P09237,Locally secreted to extracellular matrix
+ENSG00000137674,MMP20,O60882,Locally secreted to extracellular matrix
+ENSG00000137675,MMP27,Q9H306,Intracellular or membrane-bound
+ENSG00000137745,MMP13,P45452,Locally secreted to extracellular matrix
+ENSG00000138685,FGF2,P09038,Locally secreted
+ENSG00000138823,MTTP,P55157,Intracellular or membrane-bound
+ENSG00000143839,REN,P00797,Secreted to blood
+ENSG00000146648,EGFR,P00533,Secreted to blood
+ENSG00000148795,CYP17A1,P05093,Intracellular or membrane-bound
+ENSG00000149968,MMP3,P08254,Locally secreted to extracellular matrix
+ENSG00000151834,GABRA2,P47869,Intracellular or membrane-bound
+ENSG00000153029,MR1,Q95460,Intracellular or membrane-bound
+ENSG00000153956,CACNA2D1,P54289,Intracellular or membrane-bound
+ENSG00000154485,MMP21,Q8N119,Locally secreted to extracellular matrix
+ENSG00000156103,MMP16,P51512,Locally secreted to extracellular matrix
+ENSG00000158125,XDH,P47989,Intracellular or membrane-bound
+ENSG00000159110,IFNAR2,P48551,Secreted to blood
+ENSG00000159403,C1R,P00736,Secreted to blood
+ENSG00000159640,ACE,P12821,Secreted to blood
+ENSG00000160712,IL6R,P08887,Intracellular or membrane-bound
+ENSG00000160867,FGFR4,P22455,Intracellular or membrane-bound
+ENSG00000162747,FCGR3B,O75015,Secreted to blood
+ENSG00000163286,ALPPL2,P10696,Intracellular or membrane-bound
+ENSG00000163599,CTLA4,P16410,Intracellular or membrane-bound
+ENSG00000164326,CARTPT,Q16568,Secreted to blood
